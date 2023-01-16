@@ -1,16 +1,28 @@
 {
-  "name": "afkbot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@netlify/build-image",
+  "version": "4.16.3",
+  "description": "This repository contains the tools to make the build image Netlify uses to build a site from git (for continuous deployment)",
   "main": "index.js",
+  "private": "true",
   "scripts": {
-    "start": "node index.js"
+    "test": "bats --recursive --timing --tap tests"
   },
-  "author": "MannuG",
-  "license": "ISC",
-  "dependencies": {
-    "config": "^3.3.3",
-    "fs": "0.0.1-security",
-    "mineflayer": "^2.37.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/build-image.git"
+  },
+  "author": "Netlify Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netlify/build-image/issues"
+  },
+  "homepage": "https://github.com/netlify/build-image#readme",
+  "devDependencies": {
+    "@netlify/build-info": "^6.0.1",
+    "bats": "^1.3.0-alpha.0",
+    "bats-assert": "^2.0.0",
+    "bats-support": "^0.3.0",
+    "bats-file": "git+https://github.com/bats-core/bats-file.git#v0.3.0"
+  },
+  "dependencies": {}
 }
